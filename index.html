@@ -1,286 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Top 100</title>
-  <style>
-  body {
-    font-family: Calibri, sans-serif;
-    color: #8497b0;
-  }
+    <meta charset="UTF-8">
+    <title>Top 100</title>
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+            color: #8497b0;
+        }
 
-  h1 {
-    font-size: 20pt;
-  }
+        h1 {
+            font-size: 20pt;
+        }
 
-  th {
-    font-size: 11pt;
-    padding-left: 10px;
-  }
+        th {
+            font-size: 11pt;
+            padding-left: 10px;
+        }
 
-  td {
-    padding-left: 10px;
-  }
+        td {
+            padding-left: 10px;
+        }
 
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
 
-  a:hover {
-    color: #000;
-  }
+            a:hover {
+                color: #000;
+            }
 
-  .pagination {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-  }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
 
-  .pagination li {
-    margin: 0 5px;
-  }
+            .pagination li {
+                margin: 0 5px;
+            }
 
-  .pagination a {
-    text-decoration: none;
-    padding: 5px 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
+            .pagination a {
+                text-decoration: none;
+                padding: 5px 10px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+            }
 
-  .pagination   
-  a:hover {
-    background-color: #f0f0f0;
-  }
-</style>
+            .pagination  
+            a:hover {
+                background-color: #f0f0f0;
+            }
+    </style>
 </head>
 <body>
-  <h1>Songs</h1>
-  <table>
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Style</th>
-        <th>Year</th>
-        <th>HTML</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>A bitter blues</td>
-        <td>Blues</td>
-        <td style="text-align: right;">1977</td>
-        <td><a href="a_bitter_blues_-_walter_de_jong.html">open</a></td>
-      </tr>
-      <tr>
-        <td>A light in your window</td>
-        <td>Country</td>
-        <td style="text-align: right;">1981</td>
-        <td><a href="a_light_in_your_window_-_walter_de_jong.html">open</a></td>
-      </tr>
-      <tr>
-        <td>A rich man's joke</td>
-        <td>Blues</td>
-        <td style="text-align: right;">2017</td>
-        <td><a href="a_rich_mans_joke_-_walter_de_jong.html">open</a></td>
-      </tr>
-      <tr>
-        <td>A secret</td>
-        <td>Pop</td>
-        <td style="text-align: right;">1988</td>
-        <td><a href="a_secret_-_walter_de_jong.html">open</a></td>
-      </tr>
-      <tr>
-        <td>Around the mines</td>
-        <td>Blues</td>
-        <td style="text-align: right;">1978</td>
-        <td><a href="around_the_mines_-_walter_de_jong.html">open</a></td>
-      </tr>
-      <tr>
-        <td>Australian heart</td>
-        <td>Rock</td>
-        <td style="text-align: right;">1983</td>
-        <td><a href="australian_heart_-_walter_de_jong.html">open</a></td>
-      </tr>
-      <tr>
-        <td>Away from real</td>
-        <td>Ballad</td>
-        <td style="text-align: right;">1995</td>
-        <td><a href="away_from_real_-_walter_de_jong.html">open</a></td>
-      </tr>
-      <tr>
-        <td>Beeline</td>
-        <td>Ballad</td>
-        <td style="text-align: right;">1979</td>
-        <td><a href="beeline_-_walter_de_jong.html">open</a></td>
-      </tr>
-      <tr>
-        <td>Bicycles north</td>
-        <td>Pop</td>
-        <td style="text-align: right;">1985</td>
-        <td><a href="bicycles_north_-_walter_de_jong.html">open</a></td>
-      </tr>
-
-      <tr>
-        <td>Breathing in through the Nos</td>
-        <td>Blues</td>
-        <td style="text-align: right;">1981</td>
-        <td><a href="breathing_in_through_the_nos_-_walter_de_jong.html">open</a></td>
-      </tr>
-      <tr>
-        <td>Confused</td>
-        <td>Pop</td>
-        <td style="text-align: right;">1981</td>
-        <td><a href="confused_-_walter_de_jong.html">open</a></td>
-      </tr>
-<tr>
-  <td>Confused</td>
-  <td>Pop</td>
-  <td style="text-align: right;">1981</td>
-  <td><a href="confused_-_walter_de_jong.html">open</a></td>
-</tr>
-<tr>
-  <td>Crazy feeling</td>
-  <td>Ballad</td>
-  <td style="text-align: right;">1979</td>
-  <td><a href="crazy_feeling_-_walter_de_jong.html">open</a></td>
-</tr>
-<tr>
-  <td>Crystalline palaces</td>
-  <td>Pop</td>
-  <td style="text-align: right;">1982</td>
-  <td><a href="crystalline_palaces_-_walter_de_jong.html">open</a></td>
-</tr>
-<tr>
-  <td>Doesn't it make you wonder</td>
-  <td>Pop</td>
-  <td style="text-align: right;">1982</td>
-  <td><a href="doesnt_it_make_you_wonder_-_walter_de_jong.html">open</a></td>
-</tr>
-<tr>
-  <td>Don't think I'll capitulate</td>
-  <td>Pop</td>
-  <td style="text-align: right;">1982</td>
-  <td><a href="dont_think_ill_capitulate_-_walter_de_jong.html">open</a></td>
-</tr>
-<tr>
-  <td>End in tears</td>
-  <td>Pop</td>
-  <td style="text-align: right;">1998</td>
-  <td><a href="end_in_tears_-_walter_de_jong.html">open</a></td>
-</tr>
-<tr>
-  <td>Every ray</td>
-  <td>Blues</td>
-  <td style="text-align: right;">1981</td>
-  <td><a href="every_ray_-_walter_de_jong.html">open</a></td>
-</tr>
-<tr>
-  <td>Far far away</td>
-  <td>Ballad</td>
-  <td style="text-align: right;">1985</td>
-  <td><a href="far_far_away_-_walter_de_jong.html">open</a></td>
-</tr>
-<tr>
-  <td>Flower</td>
-  <td>Funk</td>
-  <td style="text-align: right;">1979</td>
-  <td><a href="flower_-_walter_de_jong.html">open</a></td>
-</tr>
-<tr>
-  <td>From the ridge</td>
-  <td>Ballad</td>
-  <td style="text-align: right;">1987</td>
-  <td><a href="from_the_ridge_-_walter_de_jong.html">open</a></td>
-</tr>
-<tr>
-  <td>Get better</td>
-  <td>Blues</td>
-  <td style="text-align: right;">1980</td>
-  <td><a href="get_better_-_walter_de_jong.html">open</a></td>
-</tr>
-<tr>
-  <td>Give it all you've got</td>
-  <td>Pop</td>
-  <td style="text-align: right;">1999</td>
-  <td><a href="give_it_all_youve_got_-_walter_de_jong.html">open</a></td>
-</tr>
-<tr>
-  <td>Hard</td>
-  <td>Rock</td>
-  <td style="text-align: right;">1978</td>
-  <td><a href="hard_-_walter_de_jong.html">open</a></td>
-</tr>
-<tr>
-  <td>Have i seen you somewhere</td>
-  <td>Pop</td>
-  <td style="text-align: right;">1980</td>
-  <td><a href="have_i_seen_you_somewhere_-_walter_de_jong.html">open</a></td>
-</tr>
-<tr>
-  <td>Hidden Water</td>
-  <td>Ballad</td>
-  <td style="text-align: right;">1980</td>
-  <td><a href="hidden_water_-_walter_de_jong.html">open</a></td>
-</tr>
-<tr>
-  <td>I listen</td>
-  <td>Rock</td>
-  <td style="text-align: right;">1978</td>
-  <td><a href="i_listen_-_walter_de_jong.html">open</a></td>
-</tr>
-<tr>
-  <td>I still remember you</td>
-  <td>Pop</td>
-  <td style="text-align: right;">1985</td>
-  <td><a href="i_still_remember_you_-_walter_de_jong.html">open</a></td>
-</tr>
-<tr>
-  <td>I wish you well</td>
-  <td>Rock</td>
-  <td style="text-align: right;">1978</td>
-  <td><a href="i_wish_you_well_-_walter_de_jong.html">open</a></td>
-</tr>
-<tr>
-  <td>I'll join you</td>
-  <td>Rock</td>
-  <td style="text-align: right;">1978</td>
-  <td><a href="ill_join_you_-_walter_de_jong.html">open</a></td>
-</tr>
-<tr>
-  <td>I'm relaxed</td>
-  <td>Ballad</td>
-  <td style="text-align: right;">1979</td>
-  <td><a href="im_relaxed_-_walter_de_jong.html">open</a></td>
-</tr>
-<tr>
-  <td>It's alright</td>
-  <td>Rock</td>
-  <td style="text-align: right;">1981</td>
-  <td><a href="its_alright_-_walter_de_jong.html">open</a></td>
-</tr>
-<tr>
-  <td>Keeping me up</td>
-  <td>Rock</td>
-  <td style="text-align: right;">1981</td>
-  <td><a href="keeping_me_up_-_walter_de_jong.html">open</a></td>
-</tr>
-<tr>
-  <td>Kill Joy</td>
-  <td>Blues</td>
-  <td style="text-align: right;">1980</td>
-  <td><a href="kill_joy_-_walter_de_jong.html">open</a></td>
-</tr>
-   </tbody>
- </table>
- <nav>
-   <ul class="pagination">
-     <li><a href="#">First</a></li>
-     <li><a href="#">Previous</a></li>
-     <li><a href="indexPage2.html?i=1">Next</a></li>
-     <li><a href="indexPage3.html?i=1">Last</a></li>
-   </ul>
- </nav>
+    <h1>Songs</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>HTML</th>
+                <th>Style</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>A bitter blues</td><td>Blues</td><td style='text-align: right;'>1977</td><td><a href='a_bitter_blues_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>A light in your window</td><td>Folk</td><td style='text-align: right;'>1981</td><td><a href='a_light_in_your_window_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>A rich man's joke</td><td>Blues</td><td style='text-align: right;'>2017</td><td><a href='a_rich_man' s_joke_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>A secret</td><td>Rock & Roll</td><td style='text-align: right;'>1988</td><td><a href='a_secret_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>Around the mines</td><td>Blues</td><td style='text-align: right;'>1978</td><td><a href='around_the_mines_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>Australian heart</td><td>Rock</td><td style='text-align: right;'>1983</td><td><a href='australian_heart_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>Away from real</td><td>Ballad</td><td style='text-align: right;'>1995</td><td><a href='away_from_real_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>Beeline</td><td>Ballad</td><td style='text-align: right;'>1979</td><td><a href='beeline_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>Bicycles north</td><td>Funk</td><td style='text-align: right;'>1985</td><td><a href='bicycles_north_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>Breathing in through the nos</td><td>Blues</td><td style='text-align: right;'>1981</td><td><a href='breathing_in_through_the_nos_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>Confused</td><td>Synth</td><td style='text-align: right;'>1981</td><td><a href='confused_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>Crazy feeling</td><td>Ballad</td><td style='text-align: right;'>1979</td><td><a href='crazy_feeling_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>Crystalline palaces</td><td>Rock</td><td style='text-align: right;'>1982</td><td><a href='crystalline_palaces_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>Doesn't it make you wonder</td><td>Pop</td><td style='text-align: right;'>1982</td><td><a href='doesn' t_it_make_you_wonder_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>Don't think I'll capitulate</td><td>Pop</td><td style='text-align: right;'>1982</td><td><a href='don' t_think_i'll_capitulate_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>End in tears</td><td>Ballad</td><td style='text-align: right;'>1998</td><td><a href='end_in_tears_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>Every ray</td><td>Rock</td><td style='text-align: right;'>1981</td><td><a href='every_ray_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>Everything comes to her</td><td>Synth</td><td style='text-align: right;'>1981</td><td><a href='everything_comes_to_her_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>Far far away</td><td>Ballad</td><td style='text-align: right;'>1985</td><td><a href='far_far_away_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>Flower</td><td>Rock</td><td style='text-align: right;'>1979</td><td><a href='flower_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>From the ridge</td><td>Ballad</td><td style='text-align: right;'>1987</td><td><a href='from_the_ridge_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>Get better</td><td>Blues</td><td style='text-align: right;'>1980</td><td><a href='get_better_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>Give it all you've got</td><td>Pop</td><td style='text-align: right;'>1999</td><td><a href='give_it_all_you' ve_got_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>Hard</td><td>Rock</td><td style='text-align: right;'>1978</td><td><a href='hard_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>Have i seen you somewhere</td><td>Ballad</td><td style='text-align: right;'>1980</td><td><a href='have_i_seen_you_somewhere_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>Hidden Water</td><td>Ballad</td><td style='text-align: right;'>1980</td><td><a href='hidden_water_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>I listen</td><td>Rock</td><td style='text-align: right;'>1978</td><td><a href='i_listen_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>I still remember you</td><td>Ballad</td><td style='text-align: right;'>1985</td><td><a href='i_still_remember_you_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>I wish you well</td><td>Rock</td><td style='text-align: right;'>1978</td><td><a href='i_wish_you_well_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>I'll join you</td><td>Ballad</td><td style='text-align: right;'>1978</td><td><a href='i' ll_join_you_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>I'm relaxed</td><td>Funk</td><td style='text-align: right;'>1979</td><td><a href='i' m_relaxed_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>It's alright</td><td>Pop</td><td style='text-align: right;'>1981</td><td><a href='it' s_alright_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>Keeping me up</td><td>Synth</td><td style='text-align: right;'>1981</td><td><a href='keeping_me_up_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>Kill Joy</td><td>Blues</td><td style='text-align: right;'>1980</td><td><a href='kill_joy_-_walter_de_jong.html'>open</a></td></tr>
+        </tbody>
+    </table>
+    <nav>
+        <ul class="pagination">
+            <li><a href="#">First</a></li>
+            <li><a href="#">Previous</a></li>
+            <li><a href="indexPage2.html?i=1">Next</a></li>
+            <li><a href="indexPage3.html?i=1">Last</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
