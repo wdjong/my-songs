@@ -1,0 +1,49 @@
+body {
+    font-family: Calibri, sans-serif;
+    color: #8497b0;
+}
+
+h1 {
+    font-size: 20pt;
+}
+
+th {
+    font-size: 11pt;
+    padding-left: 10px;
+}
+
+td {
+    padding-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+    a:hover {
+        color: #000;
+    }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+    .pagination li {
+        margin: 0 5px;
+    }
+
+    .pagination a {
+        text-decoration: none;
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+        .pagination
+        a:hover {
+            background-color: #f0f0f0;
+        }
