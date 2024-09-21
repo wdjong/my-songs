@@ -3,59 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Top 100</title>
-    <meta charset="UTF-8">
-    <title>Top 100</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="sortTable.js"></script>
 </head>
 <body>
     <h1>Top 100 songs</h1>
-    <table>
+    <table id="songTable" >
         <thead>
             <tr>
-                <th>Title</th>
-                <th>HTML</th>
-                <th>Style</th>
-                <th>Year</th>
+                <th onclick="sortTable(0)">Title</th>
+                <th onclick="sortTable(1)">Style</th>
+                <th onclick="sortTable(2)">Year</th>
+                <th onclick="sortTable(3)">HTML</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td>Kirribilli waltz</td><td>Folk</td><td style='text-align: right;'>1990</td><td><a href='kirribilli_waltz_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>Leave well enough alone</td><td>Pop</td><td style='text-align: right;'>1987</td><td><a href='leave_well_enough_alone_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>Left me cold</td><td>Country</td><td style='text-align: right;'>1977</td><td><a href='left_me_cold_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>Listener</td><td>Ballad</td><td style='text-align: right;'>1998</td><td><a href='listener_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>Locomotive</td><td>Blues</td><td style='text-align: right;'>1978</td><td><a href='locomotive_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>Lonely alone</td><td>Ballad</td><td style='text-align: right;'>1977</td><td><a href='lonely_alone_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>Long ride down</td><td>Rock</td><td style='text-align: right;'>2020</td><td><a href='long_ride_down_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>Lost in thought</td><td>Synth</td><td style='text-align: right;'>1981</td><td><a href='lost_in_thought_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>Love me too</td><td>Old-time</td><td style='text-align: right;'>2014</td><td><a href='love_me_too_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>Manifesto of mourning</td><td>Ballad</td><td style='text-align: right;'>1980</td><td><a href='manifesto_of_mourning_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>Maybe</td><td>Pop</td><td style='text-align: right;'>1983</td><td><a href='maybe_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>Met my match</td><td>Funk</td><td style='text-align: right;'>2019</td><td><a href='met_my_match_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>Moment in the sunshine</td><td>Pop</td><td style='text-align: right;'>1974</td><td><a href='moment_in_the_sunshine_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>Mother</td><td>Synth</td><td style='text-align: right;'>1982</td><td><a href='mother_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>My grandfather's clock</td><td>Ballad</td><td style='text-align: right;'>1995</td><td><a href='my_grandfather' s_clock_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>My kite</td><td>Folk</td><td style='text-align: right;'>2014</td><td><a href='my_kite_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>My lucky day</td><td>Pop</td><td style='text-align: right;'>1974</td><td><a href='my_lucky_day_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>Mystery</td><td>Blues</td><td style='text-align: right;'>2016</td><td><a href='mystery_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>Naked</td><td>Synth</td><td style='text-align: right;'>1981</td><td><a href='naked_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>Not in the same world</td><td>Ballad</td><td style='text-align: right;'>1979</td><td><a href='not_in_the_same_world_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>Of these days</td><td>Ballad</td><td style='text-align: right;'>1992</td><td><a href='of_these_days_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>One by one</td><td>Pop</td><td style='text-align: right;'>1985</td><td><a href='one_by_one_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>One more sleep</td><td>Blues</td><td style='text-align: right;'>2016</td><td><a href='one_more_sleep_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>Order in tomorrow</td><td>Ballad</td><td style='text-align: right;'>1978</td><td><a href='order_in_tomorrow_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>Out of the shadows</td><td>Ballad</td><td style='text-align: right;'>1982</td><td><a href='out_of_the_shadows_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>Perfect</td><td>Synth</td><td style='text-align: right;'>1978</td><td><a href='perfect_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>Poetry</td><td>Synth</td><td style='text-align: right;'>1982</td><td><a href='poetry_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>Pulling in different directions</td><td>Ballad</td><td style='text-align: right;'>1993</td><td><a href='pulling_in_different_directions_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>Reaching up</td><td>Ballad</td><td style='text-align: right;'>1993</td><td><a href='reaching_up_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>Rock and roll</td><td>Rock & Roll</td><td style='text-align: right;'>1973</td><td><a href='rock_and_roll_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>See if it flies</td><td>Ballad</td><td style='text-align: right;'>1996</td><td><a href='see_if_it_flies_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>She made me disappear</td><td>Rock</td><td style='text-align: right;'>1979</td><td><a href='she_made_me_disappear_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>She's got to hide it</td><td>Rock & Roll</td><td style='text-align: right;'>1981</td><td><a href='she' s_got_to_hide_it_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>Sign Language</td><td>Rock</td><td style='text-align: right;'>1979</td><td><a href='sign_language_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>Smile</td><td>Country</td><td style='text-align: right;'>1980</td><td><a href='smile_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>Southerly breeze</td><td>Ballad</td><td style='text-align: right;'>1985</td><td><a href='southerly_breeze_-_walter_de_jong.html'>open</a></td></tr>
-            <tr><td>Stand a little closer</td><td>Pop</td><td style='text-align: right;'>1983</td><td><a href='stand_a_little_closer_-_walter_de_jong.html'>open</a></td></tr>
+            <tr><td>Kirribilli waltz</td><td>Folk</td><td style='text-align: right;'>1990</td><td><button onclick="window.location.href='kirribilli_waltz_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>Leave well enough alone</td><td>Pop</td><td style='text-align: right;'>1987</td><td><button onclick="window.location.href='leave_well_enough_alone_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>Left me cold</td><td>Country</td><td style='text-align: right;'>1977</td><td><button onclick="window.location.href='left_me_cold_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>Listener</td><td>Ballad</td><td style='text-align: right;'>1998</td><td><button onclick="window.location.href='listener_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>Locomotive</td><td>Blues</td><td style='text-align: right;'>1978</td><td><button onclick="window.location.href='locomotive_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>Lonely alone</td><td>Ballad</td><td style='text-align: right;'>1977</td><td><button onclick="window.location.href='lonely_alone_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>Long ride down</td><td>Rock</td><td style='text-align: right;'>2020</td><td><button onclick="window.location.href='long_ride_down_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>Lost in thought</td><td>Synth</td><td style='text-align: right;'>1981</td><td><button onclick="window.location.href='lost_in_thought_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>Love me too</td><td>Old-time</td><td style='text-align: right;'>2014</td><td><button onclick="window.location.href='love_me_too_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>Manifesto of mourning</td><td>Ballad</td><td style='text-align: right;'>1980</td><td><button onclick="window.location.href='manifesto_of_mourning_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>Maybe</td><td>Pop</td><td style='text-align: right;'>1983</td><td><button onclick="window.location.href='maybe_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>Met my match</td><td>Funk</td><td style='text-align: right;'>2019</td><td><button onclick="window.location.href='met_my_match_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>Moment in the sunshine</td><td>Pop</td><td style='text-align: right;'>1974</td><td><button onclick="window.location.href='moment_in_the_sunshine_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>Mother</td><td>Synth</td><td style='text-align: right;'>1982</td><td><button onclick="window.location.href='mother_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>My grandfather's clock</td><td>Ballad</td><td style='text-align: right;'>1995</td><td><button onclick="window.location.href='my_grandfathers_clock_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>My kite</td><td>Folk</td><td style='text-align: right;'>2014</td><td><button onclick="window.location.href='my_kite_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>My lucky day</td><td>Pop</td><td style='text-align: right;'>1974</td><td><button onclick="window.location.href='my_lucky_day_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>Mystery</td><td>Blues</td><td style='text-align: right;'>2016</td><td><button onclick="window.location.href='mystery_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>Naked</td><td>Synth</td><td style='text-align: right;'>1981</td><td><button onclick="window.location.href='naked_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>Not in the same world</td><td>Ballad</td><td style='text-align: right;'>1979</td><td><button onclick="window.location.href='not_in_the_same_world_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>Of these days</td><td>Ballad</td><td style='text-align: right;'>1992</td><td><button onclick="window.location.href='of_these_days_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>One by one</td><td>Pop</td><td style='text-align: right;'>1985</td><td><button onclick="window.location.href='one_by_one_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>One more sleep</td><td>Blues</td><td style='text-align: right;'>2016</td><td><button onclick="window.location.href='one_more_sleep_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>Order in tomorrow</td><td>Ballad</td><td style='text-align: right;'>1978</td><td><button onclick="window.location.href='order_in_tomorrow_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>Out of the shadows</td><td>Ballad</td><td style='text-align: right;'>1982</td><td><button onclick="window.location.href='out_of_the_shadows_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>Perfect</td><td>Synth</td><td style='text-align: right;'>1978</td><td><button onclick="window.location.href='perfect_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>Poetry</td><td>Synth</td><td style='text-align: right;'>1982</td><td><button onclick="window.location.href='poetry_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>Pulling in different directions</td><td>Ballad</td><td style='text-align: right;'>1993</td><td><button onclick="window.location.href='pulling_in_different_directions_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>Reaching up</td><td>Ballad</td><td style='text-align: right;'>1993</td><td><button onclick="window.location.href='reaching_up_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>Rock and roll</td><td>Rock & Roll</td><td style='text-align: right;'>1973</td><td><button onclick="window.location.href='rock_and_roll_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>See if it flies</td><td>Ballad</td><td style='text-align: right;'>1996</td><td><button onclick="window.location.href='see_if_it_flies_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>She made me disappear</td><td>Rock</td><td style='text-align: right;'>1979</td><td><button onclick="window.location.href='she_made_me_disappear_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>She's got to hide it</td><td>Rock & Roll</td><td style='text-align: right;'>1981</td><td><button onclick="window.location.href='shes_got_to_hide_it_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>Sign Language</td><td>Rock</td><td style='text-align: right;'>1979</td><td><button onclick="window.location.href='sign_language_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>Smile</td><td>Country</td><td style='text-align: right;'>1980</td><td><button onclick="window.location.href='smile_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>Southerly breeze</td><td>Ballad</td><td style='text-align: right;'>1985</td><td><button onclick="window.location.href='southerly_breeze_-_walter_de_jong.html';">Open</button></td></tr>
+            <tr><td>Stand a little closer</td><td>Pop</td><td style='text-align: right;'>1983</td><td><button onclick="window.location.href='stand_a_little_closer_-_walter_de_jong.html';">Open</button></td></tr>
         </tbody>
     </table>
     <nav>
