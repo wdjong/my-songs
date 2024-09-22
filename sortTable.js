@@ -1,41 +1,28 @@
 function sortTable(columnIndex) {
     var table = document.getElementById("songTable");
-    var rows = table.rows;
-    var switching = true;
-    var shouldSwitch;
-    var direction = "asc"; // Set the sorting direction to ascending
-    var switchCount = 0;
+    var rowsArray = Array.from(table.rows).slice(1); // Exclude header row
 
-    alert(columnIndex);
-    while (switching) {
-        switching = false;
-        var rowsArray = Array.from(rows).slice(1); // Exclude the header row
-        for (var i = 0; i < rowsArray.length - 1; i++) {
-            shouldSwitch = false;
-            var x = rowsArray[i].getElementsByTagName("TD")[columnIndex];
-            var y = rowsArray[i + 1].getElementsByTagName("TD")[columnIndex];
-            // Compare the two rows
-            if (direction == "asc") {
-                if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-                    shouldSwitch = true;
-                    break;
-                }
-            } else if (direction == "desc") {
-                if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-                    shouldSwitch = true;
-                    break;
-                }
-            }
-        }
-        if (shouldSwitch) {
-            rowsArray[i].parentNode.insertBefore(rowsArray[i + 1], rowsArray[i]);
-            switching = true;
-            switchCount++;
+    var direction = table.getAttribute('data-sort-dir') === 'asc' ? 'desc' : 'asc';
+    table.setAttribute('data-sort-dir', direction);
+
+    rowsArray.sort(function (rowA, rowB) {
+        var cellA = rowA.cells[columnIndex].textContent.toLowerCase();
+        var cellB = rowB.cells[columnIndex].textContent.toLowerCase();
+
+        if (direction === 'asc') {
+            return cellA < cellB ? -1 : cellA > cellB ? 1 : 0;
         } else {
-            if (switchCount == 0 && direction == "asc") {
-                direction = "desc";
-                switching = true;
-            }
+            return cellA > cellB ? -1 : cellA < cellB ? 1 : 0;
         }
+    });
+
+    // Clear existing table body
+    while (table.tBodies[0].firstChild) {
+        table.tBodies[0].removeChild(table.tBodies[0].firstChild);
     }
+
+    // Append sorted rows
+    rowsArray.forEach(function (row) {
+        table.tBodies[0].appendChild(row);
+    });
 }

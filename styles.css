@@ -1,22 +1,36 @@
+/* General styles */
 body {
     font-family: Calibri, sans-serif;
     color: #8497b0;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
     font-size: 20pt;
+    text-align: center;
+}
+
+th, td {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
 }
 
 th {
     font-size: 11pt;
-    padding-left: 10px;
     cursor: pointer;
+    border-bottom: 1px solid #ddd;
 }
 
 td {
-    padding-left: 10px;
+    font-size: 10pt;
+    border-bottom: 1px solid #ddd;
 }
 
+/* Link styles */
 a {
     text-decoration: none;
     color: inherit;
@@ -26,6 +40,7 @@ a {
         color: #000;
     }
 
+/* Pagination styles */
 .pagination {
     display: flex;
     justify-content: center;
@@ -44,7 +59,52 @@ a {
         border-radius: 3px;
     }
 
-        .pagination
-        a:hover {
+        .pagination a:hover {
             background-color: #f0f0f0;
         }
+
+/* Responsive table - Wrapping table in a scrollable div */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 18pt;
+    }
+
+    th, td {
+        font-size: 9pt;
+        padding: 5px;
+    }
+
+    /* Ensure table can scroll horizontally on mobile */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        overflow-x: auto;
+    }
+
+    /* Adjust pagination buttons for smaller screens */
+    .pagination a {
+        padding: 3px 7px;
+        font-size: 9pt;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 16pt;
+    }
+
+    th, td {
+        font-size: 8pt;
+        padding: 3px;
+    }
+
+    .pagination a {
+        padding: 2px 5px;
+        font-size: 8pt;
+    }
+}
