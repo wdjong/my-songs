@@ -34,3 +34,19 @@ A.chordlink {
     border-left: solid;
     padding-left: 1ex;
 }
+
+/* Normalize table and span appearance */
+span {
+    display: block;
+    line-height: 1.5; /* Adjust to match table line height */
+    font-size: 16px; /* Ensure font size is consistent */
+}
+
+table {
+    table-layout: fixed; /* Prevent table from expanding beyond content */
+}
+
+td {
+    padding: 0; /* Adjust padding to match span */
+    line-height: 1.5; /* Make line height consistent */
+}
